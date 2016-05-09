@@ -1,3 +1,5 @@
+#include "SimpleTimer.h"
+
 int btn1 = 2;
 int btn2 = 4;
 int btn3 = 6;
@@ -33,34 +35,34 @@ void loop() {
 
   
   /////
-  void newLight(int knapval, int ledval) {
+ void newLight(int knapval, int ledval) {
    
-  }
-  ////
-  void loopshiz(){
-    rdm = random(3,8);
+ }
+ ////
+ void loopshiz(){
+   rdm = random(3,8);
   
   
   if(rdm == led){ // check om at den samme LED ikke lyser igen
-  led = random(3,8);
+    led = random(3,8);
   }
   else{
-  led = rdm;
+    led = rdm;
   }
 
-    if(led % 2 == 0){
-      led = led + 1;
+  if(led % 2 == 0){
+    led = led + 1;
     }
-  delay(200);
+    delay(200);
   
-    while(digitalRead(led - 1) == HIGH) {
+  while(digitalRead(led - 1) == HIGH) {
 
-      digitalWrite(led,HIGH);
+    digitalWrite(led,HIGH);
 
-      }
-Serial.print(" knap: ");
-Serial.println(digitalRead(led -1));
-delay(200);
-digitalWrite(led,LOW);
-counter++;
   }
+  Serial.print(" knap: ");
+  Serial.println(digitalRead(led -1));
+  delay(200);
+  digitalWrite(led,LOW);
+  counter++;
+ }

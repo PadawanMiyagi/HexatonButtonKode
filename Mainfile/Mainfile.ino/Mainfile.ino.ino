@@ -60,7 +60,7 @@ int led24 = 49;
 int l2ed = 0;
 int led = 0; // random værdi
 int rdm = 0; //random værdi
-int startBlink = 1;
+int startBlink = 0;
 
 long pushTimes[20];
 
@@ -235,6 +235,22 @@ void blinkStart() {
   delay(200);
   digitalWrite(led16, HIGH);
   delay(200);
+   digitalWrite(led17, HIGH);
+  delay(200);
+   digitalWrite(led18, HIGH);
+  delay(200);
+   digitalWrite(led19, HIGH);
+  delay(200);
+   digitalWrite(led20, HIGH);
+  delay(200);
+   digitalWrite(led21, HIGH);
+  delay(200);
+   digitalWrite(led22, HIGH);
+  delay(200);
+   digitalWrite(led23, HIGH);
+  delay(200);
+   digitalWrite(led24, HIGH);
+  delay(200);
   digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
@@ -251,6 +267,16 @@ void blinkStart() {
   digitalWrite(led14, LOW);
   digitalWrite(led15, LOW);
   digitalWrite(led16, LOW);
+   digitalWrite(led17, LOW);
+  digitalWrite(led18, LOW);
+  digitalWrite(led19, LOW);
+  digitalWrite(led20, LOW);
+  digitalWrite(led21, LOW);
+  digitalWrite(led22, LOW);
+  digitalWrite(led23, LOW);
+  digitalWrite(led24, LOW);
+  
+  
 
 }
 
